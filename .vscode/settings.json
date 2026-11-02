@@ -1,0 +1,14 @@
+{
+  // Associate CSS files with Tailwind CSS for better IntelliSense
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  // Custom regex patterns to detect Tailwind classes in classNames objects
+  // This helps Tailwind IntelliSense work with dynamic class names
+  "tailwindCSS.experimental.classRegex": [
+    ["classNames\\s*=\\s*\\{([^}]*)\\}", "['\"`]([^'\"`]*).*?['\"`]"],
+    ["classNames\\s*:\\s*\\{([^}]*)\\}", "['\"`]([^'\"`]*).*?['\"`]"],
+    ["cn\\(([^)]*)\\)", "['\"`]([^'\"`]*).*?['\"`]"],
+    ["className\\s*=\\s*\\{`([^`]*)`\\}", "([^\\s]+)"]
+  ]
+}
