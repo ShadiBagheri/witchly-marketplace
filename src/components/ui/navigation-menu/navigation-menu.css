@@ -1,0 +1,37 @@
+@layer components {
+  .navigation-menu {
+    @apply relative flex items-center justify-center;
+  }
+
+  .navigation-menu-list {
+    @apply flex list-none items-center justify-center;
+  }
+
+  .navigation-menu-trigger {
+    @apply inline-flex items-center justify-center gap-2 outline-none disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .navigation-menu-trigger-icon {
+    @apply relative transition-transform duration-300;
+  }
+
+  .navigation-menu-viewport {
+    @apply absolute top-full isolate z-50 flex justify-center ltr:left-auto rtl:right-0;
+  }
+
+  .navigation-menu-link {
+    @apply flex flex-col transition-all outline-none;
+  }
+
+  .navigation-menu-indicator {
+    @apply data-[state=visible]:animate-in data-[state=hidden]:animate-out data-[state=hidden]:fade-out data-[state=visible]:fade-in top-full z-1 flex h-1.5 items-end justify-center overflow-hidden;
+  }
+
+  .navigation-menu-indicator-content {
+    @apply relative top-[60%] h-2 w-2 rotate-45;
+  }
+
+  .navigation-menu-trigger[data-state='open'] .navigation-menu-trigger-icon {
+    @apply rotate-180;
+  }
+}

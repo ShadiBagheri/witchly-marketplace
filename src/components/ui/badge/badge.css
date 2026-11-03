@@ -1,0 +1,251 @@
+/* -----------------------------------------------------------
+   COMPONENTS
+----------------------------------------------------------- */
+@layer components {
+  .badge-wrapper {
+    @apply flex h-fit w-fit items-center justify-center gap-1 bg-transparent px-4 py-1;
+  }
+
+  .badge-wrapper-rounded {
+    @apply rounded-l-3xl rounded-r-3xl;
+  }
+
+  .badge {
+    @apply flex h-auto min-h-0 items-center justify-center gap-1 font-medium;
+  }
+
+  /* Primary */
+  .badge-primary.badge-fill {
+    @apply bg-primary-500 text-neutral-100;
+  }
+  .badge-primary.badge-outline {
+    @apply bg-primary-100 text-primary-500 border-primary-500 border;
+  }
+  .badge-primary.badge-ghost {
+    @apply text-primary-500 bg-transparent;
+  }
+
+  /* Secondary */
+  .badge-secondary.badge-fill {
+    @apply bg-secondary-500 text-neutral-100;
+  }
+  .badge-secondary.badge-outline {
+    @apply bg-secondary-100 text-secondary-500 border-secondary-500 border;
+  }
+  .badge-secondary.badge-ghost {
+    @apply text-secondary-500 bg-transparent;
+  }
+
+  /* Info */
+  .badge-info.badge-fill {
+    @apply bg-info-500 text-neutral-100;
+  }
+  .badge-info.badge-outline {
+    @apply bg-secondary-100 text-info-500 border-info-500 border;
+  }
+  .badge-secondary.badge-ghost {
+    @apply text-info-500 bg-transparent;
+  }
+
+  /* Success */
+  .badge-success.badge-fill {
+    @apply bg-success-500 text-neutral-100;
+  }
+  .badge-success.badge-outline {
+    @apply bg-success-100 text-success-500 border-success-500 border;
+  }
+  .badge-success.badge-ghost {
+    @apply text-success-500 bg-transparent;
+  }
+
+  /* Warning */
+  .badge-warning.badge-fill {
+    @apply bg-warning-500 text-neutral-100;
+  }
+  .badge-warning.badge-outline {
+    @apply bg-warning-100 text-warning-500 border-warning-500 border;
+  }
+  .badge-warning.badge-ghost {
+    @apply text-warning-500 bg-transparent;
+  }
+
+  /* Neutral */
+  .badge-neutral.badge-fill {
+    @apply bg-neutral-500 text-neutral-100;
+  }
+  .badge-neutral.badge-outline {
+    @apply border border-neutral-500 bg-neutral-100 text-neutral-500;
+  }
+  .badge-neutral.badge-ghost {
+    @apply bg-transparent text-neutral-100;
+  }
+
+  .badge-fullRounded {
+    @apply rounded-l-3xl rounded-r-3xl;
+  }
+}
+
+/* -----------------------------------------------------------
+   SIZE (TEXT ONLY)
+----------------------------------------------------------- */
+@layer utilities {
+  .badge-xs {
+    @apply text-[10px] leading-3;
+  }
+  .badge-sm {
+    @apply text-xs leading-4;
+  }
+  .badge-md {
+    @apply text-sm leading-5;
+  }
+  .badge-lg {
+    @apply text-base leading-6;
+  }
+  .badge-xl {
+    @apply text-lg leading-7;
+  }
+  .badge-2xl {
+    @apply text-xl leading-8;
+  }
+  .badge-3xl {
+    @apply text-2xl leading-9;
+  }
+  .badge-4xl {
+    @apply text-3xl leading-10;
+  }
+}
+
+/* -----------------------------------------------------------
+   SHAPE (NUMERIC ONLY)
+----------------------------------------------------------- */
+@layer utilities {
+  .badge-xs-shape {
+    @apply flex h-4 min-h-4 w-4 min-w-4 items-center justify-center;
+  }
+  .badge-sm-shape {
+    @apply flex h-5 min-h-5 w-5 min-w-5 items-center justify-center;
+  }
+  .badge-md-shape {
+    @apply flex h-6 min-h-6 w-6 min-w-6 items-center justify-center;
+  }
+  .badge-lg-shape {
+    @apply flex h-8 min-h-8 w-8 min-w-8 items-center justify-center;
+  }
+  .badge-xl-shape {
+    @apply flex h-9 min-h-9 w-9 min-w-9 items-center justify-center;
+  }
+  .badge-2xl-shape {
+    @apply flex h-12 min-h-12 w-12 min-w-12 items-center justify-center;
+  }
+  .badge-3xl-shape {
+    @apply flex h-14 min-h-14 w-14 min-w-14 items-center justify-center;
+  }
+  .badge-4xl-shape {
+    @apply flex h-16 min-h-16 w-16 min-w-16 items-center justify-center;
+  }
+}
+
+/* -----------------------------------------------------------
+   PADDING (NON-NUMERIC ONLY)
+----------------------------------------------------------- */
+@layer utilities {
+  .badge-xs-padding {
+    @apply px-2 py-0.5;
+  }
+  .badge-sm-padding {
+    @apply px-2.5 py-0.5;
+  }
+  .badge-md-padding {
+    @apply px-4 py-1;
+  }
+  .badge-lg-padding {
+    @apply px-5 py-1;
+  }
+  .badge-xl-padding {
+    @apply px-6 py-1;
+  }
+  .badge-2xl-padding {
+    @apply px-7 py-1.5;
+  }
+  .badge-3xl-padding {
+    @apply px-8 py-1.5;
+  }
+  .badge-4xl-padding {
+    @apply px-9 py-1.5;
+  }
+}
+
+/* -----------------------------------------------------------
+   ICON SIZES
+----------------------------------------------------------- */
+@layer utilities {
+  .badge-icon-xs {
+    @apply h-3 w-3;
+  }
+  .badge-icon-sm {
+    @apply h-3.5 w-3.5;
+  }
+  .badge-icon-md {
+    @apply h-4 w-4;
+  }
+  .badge-icon-lg {
+    @apply h-5 w-5;
+  }
+  .badge-icon-xl {
+    @apply h-5 w-5;
+  }
+  .badge-icon-2xl {
+    @apply h-6 w-6;
+  }
+  .badge-icon-3xl {
+    @apply h-7 w-7;
+  }
+  .badge-icon-4xl {
+    @apply h-8 w-8;
+  }
+}
+
+/* -----------------------------------------------------------
+   WRAPPER SIZES (for offset mode)
+----------------------------------------------------------- */
+@layer utilities {
+  .badge-wrapper-xs {
+    @apply px-3 py-0.5;
+  }
+  .badge-wrapper-sm {
+    @apply px-3 py-0.5;
+  }
+  .badge-wrapper-md {
+    @apply px-4 py-1;
+  }
+  .badge-wrapper-lg {
+    @apply px-5 py-1;
+  }
+  .badge-wrapper-xl {
+    @apply px-6 py-1;
+  }
+  .badge-wrapper-2xl {
+    @apply px-7 py-1.5;
+  }
+  .badge-wrapper-3xl {
+    @apply px-8 py-1.5;
+  }
+  .badge-wrapper-4xl {
+    @apply px-9 py-1.5;
+  }
+}
+
+/* -----------------------------------------------------------
+   BADGE VARIANTS WITH ROUNDED CORNERS
+----------------------------------------------------------- */
+@layer components {
+  /* Override for specific variants when not rounded */
+  .badge:not(.badge-fullRounded) {
+    @apply rounded-none;
+  }
+
+  /* Ensure neutral fill variant has proper styling */
+  .badge-neutral.badge-fill:not(.badge-ghost) {
+    @apply bg-neutral-500 text-neutral-100;
+  }
+}

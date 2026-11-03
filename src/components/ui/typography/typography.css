@@ -1,0 +1,145 @@
+/* Display Utilities */
+@utility display-1 {
+  @apply text-5xl font-bold;
+}
+
+@utility display-2 {
+  @apply text-[2.5rem] font-bold;
+}
+
+@utility display-3 {
+  @apply text-[2rem] font-bold;
+}
+
+/* Heading Utilities */
+@utility heading-1 {
+  @apply text-[1.75rem] font-bold;
+}
+
+@utility heading-2 {
+  @apply text-2xl font-bold;
+}
+
+@utility heading-3 {
+  @apply text-xl font-bold;
+}
+
+@utility heading-4 {
+  @apply text-lg font-bold;
+}
+
+@utility heading-5 {
+  @apply text-base font-bold;
+}
+
+/* Body Utilities */
+@utility body-1 {
+  @apply text-2xl leading-[160%] font-semibold;
+}
+
+@utility body-2 {
+  @apply text-2xl font-medium;
+}
+@utility body-3 {
+  @apply text-2xl leading-[160%] font-normal;
+}
+
+@utility body-4 {
+  @apply text-xl font-semibold;
+}
+
+@utility body-5 {
+  @apply text-xl font-medium;
+}
+
+@utility body-6 {
+  @apply text-xl font-normal;
+}
+
+@utility body-7 {
+  @apply text-lg font-semibold;
+}
+
+@utility body-8 {
+  @apply text-lg font-medium;
+}
+
+@utility body-9 {
+  @apply text-lg font-normal;
+}
+
+@utility body-10 {
+  @apply text-base font-semibold;
+}
+
+@utility body-11 {
+  @apply text-base font-medium;
+}
+
+@utility body-12 {
+  @apply text-base leading-[160%] font-normal;
+}
+
+@utility body-13 {
+  @apply text-sm font-semibold;
+}
+
+@utility body-14 {
+  @apply text-sm leading-[130%] font-medium;
+}
+
+@utility body-15 {
+  @apply text-sm leading-[140%] font-normal;
+}
+
+@utility body-16 {
+  @apply text-xs leading-[140%] font-semibold;
+}
+
+@utility body-17 {
+  @apply text-xs leading-[140%] font-medium;
+}
+
+@utility body-18 {
+  @apply text-xs leading-[140%] font-normal;
+}
+
+/* Color Utilities */
+.typography-primary {
+  @apply text-primary;
+}
+
+.typography-secondary {
+  @apply text-secondary;
+}
+
+.typography-info {
+  @apply text-info;
+}
+
+.typography-success {
+  @apply text-success;
+}
+
+.typography-warning {
+  @apply text-warning;
+}
+
+.typography-neutral {
+  @apply text-neutral;
+}
+
+/* Custom Utilities */
+.truncate-start {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
+  text-align: left;
+}
+
+.typography-inherit {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}

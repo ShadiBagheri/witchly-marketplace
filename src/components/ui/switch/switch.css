@@ -1,0 +1,17 @@
+@layer components {
+  .switch {
+    @apply inline-flex size-10 shrink-0 cursor-pointer items-center justify-center border-none bg-transparent transition-colors duration-200 outline-none disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .switch-thumb {
+    @apply pointer-events-none flex size-5 items-center justify-center rounded-none border-none bg-transparent transition-colors duration-200;
+  }
+
+  .switch[data-state='checked'] .switch-thumb {
+    @apply text-warning;
+  }
+
+  .switch[data-state='unchecked'] .switch-thumb {
+    @apply text-warning-500 dark:text-warning-500;
+  }
+}
