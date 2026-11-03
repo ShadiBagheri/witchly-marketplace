@@ -1,0 +1,306 @@
+@layer {
+  .button {
+    @apply flex h-fit cursor-pointer items-center justify-center gap-2 transition-all hover:duration-500 focus:outline-none active:scale-100;
+  }
+
+  /* Primary */
+  .button-primary {
+    @apply hover:bg-primary-300 active:bg-primary-100;
+  }
+
+  .button-primary.button-fill {
+    @apply bg-primary-500 hover:bg-primary-400 active:bg-primary-300 text-neutral-0;
+  }
+
+  .button-primary.button-outline {
+    @apply border-primary-500 text-primary-500 active:bg-primary-400 hover:bg-primary-500 hover:text-neutral-0 active:text-neutral-0 border-2 bg-transparent;
+  }
+
+  .button-primary.button-ghost {
+    @apply text-primary-500 hover:bg-primary-100 active:bg-primary-200 bg-transparent;
+  }
+
+  .button-primary.button-link {
+    @apply text-primary-500 hover:text-primary-400 bg-transparent underline-offset-6 hover:underline;
+  }
+
+  .button-primary.button-disabled {
+    @apply bg-primary-100 pointer-events-none cursor-not-allowed;
+  }
+
+  .button-primary.button-outline.button-disabled {
+    @apply border-primary-300 text-primary-300 pointer-events-none cursor-not-allowed border-2 bg-transparent;
+  }
+
+  .button-primary.button-ghost.button-disabled {
+    @apply text-primary-300 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-primary.button-link.button-disabled {
+    @apply text-primary-300 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-primary.button-outline span svg,
+  .button-primary.button-ghost span svg,
+  .button-primary.button-link span svg {
+    @apply stroke-primary-500;
+  }
+
+  /* Secondary */
+  .button-secondary {
+    @apply hover:bg-secondary-300 active:bg-secondary-100;
+  }
+
+  .button-secondary.button-fill {
+    @apply bg-secondary-500 hover:bg-secondary-400 active:bg-secondary-300 text-neutral-0;
+  }
+
+  .button-secondary.button-outline {
+    @apply border-secondary-500 text-secondary-500 active:bg-secondary-400 active:text-neutral-0 hover:bg-secondary-500 hover:text-neutral-0 border-2 bg-transparent;
+  }
+
+  .button-secondary.button-ghost {
+    @apply text-secondary-500 hover:bg-secondary-100 active:bg-secondary-200 bg-transparent;
+  }
+
+  .button-secondary.button-link {
+    @apply text-secondary-500 hover:text-secondary-400 bg-transparent underline-offset-6 hover:underline;
+  }
+
+  .button-secondary.button-disabled {
+    @apply bg-secondary-100 pointer-events-none cursor-not-allowed;
+  }
+
+  .button-secondary.button-outline.button-disabled {
+    @apply border-secondary-300 text-secondary-300 pointer-events-none cursor-not-allowed border-2 bg-transparent;
+  }
+
+  .button-secondary.button-ghost.button-disabled {
+    @apply text-secondary-300 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-secondary.button-link.button-disabled {
+    @apply text-secondary-300 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-secondary.button-outline span svg,
+  .button-secondary.button-ghost span svg,
+  .button-secondary.button-link span svg {
+    @apply stroke-secondary-500;
+  }
+
+  /* Info */
+  .button-info {
+    @apply hover:bg-info-300 active:bg-info-100;
+  }
+
+  .button-info.button-fill {
+    @apply bg-info-500 hover:bg-info-400 active:bg-info-300 text-neutral-0;
+  }
+
+  .button-info.button-outline {
+    @apply border-info-500 text-info-500 active:bg-info-400 active:text-neutral-0 hover:bg-info-500 hover:text-neutral-0 border-2 bg-transparent;
+  }
+
+  .button-info.button-ghost {
+    @apply text-info-500 hover:bg-info-100 active:bg-info-200 bg-transparent;
+  }
+
+  .button-info.button-link {
+    @apply text-info-500 hover:text-info-400 bg-transparent underline-offset-6 hover:underline;
+  }
+
+  .button-info.button-disabled {
+    @apply bg-info-100 pointer-events-none cursor-not-allowed;
+  }
+
+  .button-info.button-outline.button-disabled {
+    @apply border-info-300 text-info-300 pointer-events-none cursor-not-allowed border-2 bg-transparent;
+  }
+
+  .button-info.button-ghost.button-disabled {
+    @apply text-info-300 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-info.button-link.button-disabled {
+    @apply text-info-300 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-info.button-outline span svg,
+  .button-info.button-ghost span svg,
+  .button-info.button-link span svg {
+    @apply stroke-info-500;
+  }
+
+  /* Error */
+  .button-warning {
+    @apply hover:bg-warning-300 active:bg-warning-100;
+  }
+
+  .button-warning.button-fill {
+    @apply bg-warning-500 hover:bg-warning-400 active:bg-warning-300 text-neutral-0;
+  }
+
+  .button-warning.button-outline {
+    @apply border-warning-500 text-warning-500 active:bg-warning-400 hover:bg-warning-500 active:text-neutral-0 hover:text-neutral-0 border-2 bg-transparent;
+  }
+
+  .button-warning.button-ghost {
+    @apply text-warning-500 hover:bg-warning-100 active:bg-warning-200 bg-transparent;
+  }
+
+  .button-error.button-link {
+    @apply text-warning-500 hover:text-warning-400 bg-transparent underline-offset-6 hover:underline;
+  }
+
+  .button-warning.button-disabled {
+    @apply bg-warning-100 pointer-events-none cursor-not-allowed;
+  }
+
+  .button-warning.button-outline.button-disabled {
+    @apply border-warning-300 text-warning-300 pointer-events-none cursor-not-allowed border-2 bg-transparent;
+  }
+
+  .button-warning.button-ghost.button-disabled {
+    @apply text-warning-300 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-warning.button-link.button-disabled {
+    @apply text-warning-300 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-warning.button-outline span svg,
+  .button-warning.button-ghost span svg,
+  .button-warning.button-link span svg {
+    @apply stroke-warning-500;
+  }
+
+  /* Success */
+  .button-success {
+    @apply hover:bg-success-300 active:bg-success-100;
+  }
+
+  .button-success.button-fill {
+    @apply bg-success-500 hover:bg-success-400 active:bg-success-300 text-neutral-0;
+  }
+
+  .button-success.button-outline {
+    @apply border-success-500 text-success-500 active:bg-success-400 hover:bg-success-500 active:text-neutral-0 hover:text-neutral-0 border-2 bg-transparent;
+  }
+
+  .button-success.button-ghost {
+    @apply text-success-500 hover:bg-success-100 active:bg-success-200 bg-transparent;
+  }
+
+  .button-success.button-link {
+    @apply text-success-500 hover:text-success-400 bg-transparent underline-offset-6 hover:underline;
+  }
+
+  .button-success.button-disabled {
+    @apply bg-success-100 pointer-events-none cursor-not-allowed;
+  }
+
+  .button-success.button-outline.button-disabled {
+    @apply border-success-300 text-success-300 pointer-events-none cursor-not-allowed border-2 bg-transparent;
+  }
+
+  .button-success.button-ghost.button-disabled {
+    @apply text-success-300 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-success.button-link.button-disabled {
+    @apply text-success-300 pointer-events-none cursor-not-allowed bg-transparent;
+  }
+
+  .button-success.button-outline span svg,
+  .button-success.button-ghost span svg,
+  .button-success.button-link span svg {
+    @apply stroke-success-500;
+  }
+
+  /* Neutral */
+  .button-neutral {
+    @apply hover:bg-neutral-300 active:bg-neutral-100;
+  }
+
+  .button-neutral.button-fill {
+    @apply text-neutral-0 bg-neutral-500 hover:bg-neutral-400 active:bg-neutral-300;
+  }
+
+  .button-neutral.button-outline {
+    @apply active:text-neutral-0 hover:text-neutral-0 border-2 border-neutral-500 bg-transparent text-neutral-500 hover:bg-neutral-500 active:bg-neutral-400;
+  }
+
+  .button-neutral.button-ghost {
+    @apply bg-transparent text-neutral-500 hover:bg-neutral-100 active:bg-neutral-200;
+  }
+
+  .button-neutral.button-link {
+    @apply bg-transparent text-neutral-500 underline-offset-6 hover:text-neutral-400 hover:underline;
+  }
+
+  .button-neutral.button-disabled {
+    @apply pointer-events-none cursor-not-allowed bg-neutral-100;
+  }
+
+  .button-neutral.button-outline.button-disabled {
+    @apply pointer-events-none cursor-not-allowed border-2 border-neutral-300 bg-transparent text-neutral-300;
+  }
+
+  .button-neutral.button-ghost.button-disabled {
+    @apply pointer-events-none cursor-not-allowed bg-transparent text-neutral-300;
+  }
+
+  .button-neutral.button-link.button-disabled {
+    @apply pointer-events-none cursor-not-allowed bg-transparent text-neutral-300;
+  }
+
+  .button-neutral.button-outline span svg,
+  .button-neutral.button-ghost span svg,
+  .button-neutral.button-link span svg {
+    @apply stroke-neutral-500;
+  }
+}
+
+/* Size */
+@utility button-text-xs {
+  @apply rounded-md px-4 py-1;
+}
+
+@utility button-text-sm {
+  @apply rounded-lg px-4 py-2;
+}
+
+@utility button-text-md {
+  @apply rounded-xl px-6 py-3;
+}
+
+@utility button-text-lg {
+  @apply rounded-xl px-28 py-4;
+}
+
+/* Icons */
+@utility button-icon-xs {
+  @apply h-3 w-3 rounded-md p-1;
+}
+
+@utility button-icon-sm {
+  @apply h-3.5 w-3.5 rounded-lg p-2;
+}
+
+@utility button-icon-md {
+  @apply h-4 w-4 rounded-xl p-3;
+}
+
+@utility button-icon-lg {
+  @apply h-6 w-6 rounded-xl p-4;
+}
+
+/* Additional styles */
+@utility button-fullWidth {
+  @apply w-full;
+}
+
+@utility button-fullRounded {
+  @apply rounded-full;
+}
