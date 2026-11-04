@@ -32,7 +32,6 @@ export const buttonVariants = cva('button', {
   },
   defaultVariants: {
     variant: 'fill',
-    color: 'primary',
   },
 });
 

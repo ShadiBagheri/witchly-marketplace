@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { Switch } from './switch';
-import { MoonIcon, SunIcon } from '@/components/shared/icons';
+import { MoonIcon, SunIcon } from '@icons';
 
 const meta: Meta<typeof Switch> = {
   title: 'UI/Switch',

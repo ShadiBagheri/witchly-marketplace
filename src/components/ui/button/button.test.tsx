@@ -8,7 +8,7 @@ describe('Button Component', () => {
     render(<Button>Click me</Button>);
     const button = screen.getByRole('button', { name: 'Click me' });
     expect(button).toBeInTheDocument();
-    expect(button).toHaveClass('button', 'button-fill', 'button-primary');
+    expect(button).toHaveClass('button', 'button-fill');
     expect(button).toHaveClass('button-text-md');
     expect(button).toHaveAttribute('type', 'button');
   });
