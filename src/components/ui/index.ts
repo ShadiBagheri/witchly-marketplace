@@ -6,3 +6,7 @@ export * from './switch';
 export * from './slider';
 export * from './carousel';
 export * from './navigation-menu';
+export * from './text-input';
+export * from './label';
+export * from './accordion';
+export * from './sheet';

@@ -1,0 +1,49 @@
+@layer components {
+  .accordion-item {
+    @apply flex w-full flex-col gap-5;
+  }
+
+  .accordion-trigger {
+    @apply text-neutral-900 dark:text-neutral-0 flex w-full items-center justify-between;
+  }
+  .accordion-icon {
+    @apply relative transition duration-300;
+  }
+
+  .accordion-trigger[data-state='open'] .accordion-icon {
+    @apply rotate-180;
+  }
+
+  .accordion-content {
+    @apply text-neutral-700 overflow-hidden dark:text-neutral-300;
+  }
+
+  .accordion-content[data-state='open'] {
+    animation: accordion-down 0.3s ease-out forwards;
+  }
+
+  .accordion-content[data-state='closed'] {
+    animation: accordion-up 0.3s ease-in forwards;
+  }
+}
+@keyframes accordion-down {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}

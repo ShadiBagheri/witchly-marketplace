@@ -21,6 +21,7 @@
     "generate:icons": "tsx scripts/generate-icons.ts"
   },
   "dependencies": {
+    "@hookform/resolvers": "^7.0.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cn": "^0.5.2",
@@ -30,7 +31,10 @@
     "radix-ui": "^1.8.1",
     "react": "19.2.8",
     "react-dom": "19.2.8",
-    "tailwind-merge": "^3.6.0"
+    "react-hook-form": "^7.91.0",
+    "tailwind-merge": "^3.6.0",
+    "typewriter-effect": "^3.3.0",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^5.2.1",

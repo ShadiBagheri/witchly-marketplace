@@ -1,0 +1,48 @@
+@layer components {
+  .label {
+    @apply peer-disabled:cursor-not-allowed peer-disabled:opacity-70;
+  }
+
+  /* Color */
+  .label-primary {
+    @apply text-primary-500 active:text-primary-500/30;
+  }
+  .label-secondary {
+    @apply text-secondary-500 active:text-secondary-500/30;
+  }
+  .label-neutral {
+    @apply text-neutral-500 active:text-neutral-500/30;
+  } 
+
+  /* Size Variants */
+ .label-xs {
+    @apply text-xs;
+  }
+  .label-sm {
+    @apply text-sm;
+  }
+  .label-base {
+    @apply text-base;
+  }
+  .label-lg {
+    @apply text-lg;
+  }
+  .label-xl {
+    @apply text-xl;
+  } 
+
+  /* Align  */
+.label-left {
+    @apply text-left;
+  }
+  .label-right {
+    @apply text-right;
+  }
+  .label-center {
+    @apply text-center;
+  }
+  .label-justify {
+    @apply text-justify;
+  } 
+}
+

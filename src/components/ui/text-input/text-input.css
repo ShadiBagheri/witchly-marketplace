@@ -1,0 +1,185 @@
+@layer components {
+  .textInput {
+    @apply relative flex h-12 w-100 items-center gap-2.5 rounded-xl border-[1.5px] border-neutral-200 bg-neutral-100 px-4 transition-colors focus-within:border-neutral-300 focus:outline-none;
+    input {
+      @apply h-full text-base font-medium text-neutral-400 placeholder:text-base placeholder:font-medium placeholder:text-neutral-300;
+    }
+    svg {
+      @apply h-5 w-5 text-neutral-400;
+    }
+  }
+
+  .textInputLabel {
+    @apply mb-3 font-semibold text-neutral-700;
+  }
+
+  .textInputMessage {
+    @apply mt-2 font-semibold;
+  }
+
+  /* Primary */
+  .textInput-primary {
+    @apply focus-within:border-primary-500;
+  }
+
+  .textInput-primary.textInput-outline {
+    @apply focus-within:bg-primary-500/10 border-primary-500 border;
+  }
+
+  .textInput-primary.textInput-fill {
+    @apply bg-primary-500 focus-within:bg-primary-500/90 text-white;
+  }
+
+  .textInput-primary.textInput-ghost {
+    @apply text-primary-500 focus-within:bg-primary-500/10 border-transparent;
+  }
+
+  .textInput-primary span svg {
+    @apply stroke-primary-500;
+  }
+
+  /* Secondary */
+  .textInput-secondary {
+    @apply focus-within:bg-secondary-500/90;
+  }
+
+  .textInput-secondary.textInput-outline {
+    @apply border-secondary-500 text-secondary-500 focus-within:bg-secondary-500/10 border;
+  }
+
+  .textInput-secondary.textInput-fill {
+    @apply bg-secondary-500 focus-within:bg-secondary-500/90 text-white;
+  }
+
+  .textInput-secondary.textInput-ghost {
+    @apply text-secondary-500 focus-within:bg-secondary-500/10 border-transparent;
+  }
+
+  .textInput-secondary span svg {
+    @apply stroke-secondary-500;
+  }
+
+  /* Neutral */
+  .textInput-neutral {
+    @apply focus-within:bg-neutral-500/90;
+  }
+
+  .textInput-neutral.textInput-outline {
+    @apply border border-neutral-200 text-neutral-500 focus-within:bg-neutral-500/10;
+  }
+
+  .textInput-neutral.textInput-fill {
+    @apply bg-neutral-500 text-white focus-within:bg-neutral-500/90;
+  }
+
+  .textInput-neutral.textInput-ghost {
+    @apply border-transparent text-neutral-500 focus-within:bg-neutral-500/10;
+  }
+
+  .textInput-neutral span svg {
+    @apply stroke-neutral-500;
+  }
+
+  /* Full width */
+  .textInput-fullWidth {
+    @apply w-full;
+  }
+
+  /* Disabled */
+  .textInput-disabled {
+    @apply pointer-events-none cursor-not-allowed;
+  }
+}
+
+/* Size TextInput */
+@utility textInput-base {
+  @apply gap-2.5;
+  input {
+    @apply placeholder:text-neutral-300;
+  }
+  svg {
+    @apply text-neutral-400;
+  }
+}
+
+@utility textInput-sm {
+  @apply textInput-base h-10 w-75 rounded-md px-4;
+  input {
+    @apply text-sm font-normal placeholder:text-sm placeholder:font-normal;
+  }
+  svg {
+    @apply h-4 w-4;
+  }
+}
+
+@utility textInput-md {
+  @apply textInput-base h-12 w-100 rounded-lg px-4;
+  input {
+    @apply text-base font-medium placeholder:text-base placeholder:font-medium;
+  }
+  svg {
+    @apply h-5 w-5;
+  }
+}
+
+@utility textInput-lg {
+  @apply textInput-base h-14 w-125 rounded-xl px-5;
+  input {
+    @apply text-lg font-medium placeholder:text-lg placeholder:font-medium;
+  }
+  svg {
+    @apply h-5.5 w-5.5;
+  }
+}
+
+/* Light Bckground */
+@utility textInput-sm-light {
+  @apply textInput-sm bg-neutral-0 border-[1.5px] border-neutral-100;
+}
+
+@utility textInput-md-light {
+  @apply textInput-md bg-neutral-0 border-[1.5px] border-neutral-100;
+}
+
+@utility textInput-lg-light {
+  @apply textInput-lg bg-neutral-0 border-[1.5px] border-neutral-100;
+}
+
+/* EndAction Icon */
+@utility textInput-sm-endAction {
+  @apply textInput-sm pr-3.5 pl-2.5;
+}
+
+@utility textInput-md-endAction {
+  @apply textInput-md pr-4 pl-3;
+}
+
+@utility textInput-lg-endAction {
+  @apply textInput-lg pr-5 pl-4;
+}
+
+/* Label size */
+@utility textInput-sm-label {
+  @apply text-sm;
+}
+
+@utility textInput-md-label {
+  @apply text-base;
+}
+
+@utility textInput-lg-label {
+  @apply text-lg;
+}
+
+/* Label Message */
+@utility textInput-sm-inputMessage {
+  @apply text-sm;
+}
+
+@utility textInput-md-inputMessage {
+  @apply text-base;
+}
+
+@utility textInput-lg-inputMessage {
+  @apply text-lg;
+}
