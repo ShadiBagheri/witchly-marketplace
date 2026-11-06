@@ -1,9 +1,13 @@
+import { HomeFeature } from '@/features/home';
 import { HomeLayout } from '@/layouts/home-layout';
 
-export default function Home() {
+// Mock Data
+import { PractitionersSectionData } from '@/features/home/components/practitioners-section/constants';
+
+export default function HomePage() {
   return (
     <HomeLayout>
-      <h1>Home Page</h1>
+      <HomeFeature practitionersSectionData={PractitionersSectionData} />
     </HomeLayout>
   );
 }

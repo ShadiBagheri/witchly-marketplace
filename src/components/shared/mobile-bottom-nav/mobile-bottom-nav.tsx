@@ -18,7 +18,7 @@ import {
   Typography,
 } from '@/components/ui';
 
-import { Navigation } from '@/components/shared/nqvigation-link/navigation-link';
+import { Navigation } from '@/components/shared/navigation-link/navigation-link';
 import { bottomNavigationItems, mobileMenuItem } from '@/components/layout/header/constants';
 
 // Profile Sheet

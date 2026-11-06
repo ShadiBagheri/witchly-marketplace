@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { cva } from 'class-variance-authority';
 import { cn } from 'cn';
-import { ChevronDownIcon } from '@icons';
 import { NavigationMenu as NavigationMenuPrimitive } from 'radix-ui';
 
 function NavigationMenu({
@@ -69,11 +68,8 @@ function NavigationMenuTrigger({
       className={cn(navigationMenuTriggerStyle(), 'group', className)}
       {...props}
     >
-      {children}{' '}
-      <ChevronDownIcon
-        className="relative top-[1px] ml-1 size-3 transition duration-300 group-data-[state=open]:rotate-180"
-        aria-hidden="true"
-      />
+      {children}
+      {/* ← آیکون ChevronDownIcon از اینجا حذف شد تا به صورت پیش‌فرض روی همه منوها رندر نشه */}
     </NavigationMenuPrimitive.Trigger>
   );
 }
