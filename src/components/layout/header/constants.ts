@@ -1,4 +1,4 @@
-import type { MenuItem } from '@/components/shared/nqvigation-link/types';
+import type { MenuItem } from '@/components/shared/navigation-link/types';
 
 import {
   CardHeartIcon,
